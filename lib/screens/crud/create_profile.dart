@@ -155,7 +155,7 @@ class CreateProfile extends StatelessWidget {
                         width: double.infinity,
                         child: StatefulBuilder(
                           builder: (context, setState) => ActionButton(
-                            // isloding: isLoding,
+                            isloding: isLoding,
                             titel: 'Create User',
                             titelstyle: titel1,
                             action: () {
@@ -164,11 +164,6 @@ class CreateProfile extends StatelessWidget {
                                 setState(() {
                                   isLoding = true;
                                 });
-                                // Auth().signInWithGoogle(
-                                //   context: context,
-                                //   name: name.text,
-                                //   phonenumber: number.text,
-                                // );
                                 Auth().createUserByGoogle(
                                   context: context,
                                   name: name.text,

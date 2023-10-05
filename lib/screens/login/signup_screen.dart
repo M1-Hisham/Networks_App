@@ -53,7 +53,7 @@ class SignupScreen extends StatelessWidget {
                     SizedBox(
                       height: 40,
                     ),
-                    //the email
+                    //the name
                     TextFormField(
                       onFieldSubmitted: (value) {
                         FocusScope.of(context).requestFocus(numberNode);
@@ -365,7 +365,7 @@ class SignupScreen extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                    ////////////////////////////////////////the button Signup
+                    ///////////////////////////////the button Signup
                     StatefulBuilder(
                       builder: (context, setState) => SizedBox(
                         width: double.infinity,

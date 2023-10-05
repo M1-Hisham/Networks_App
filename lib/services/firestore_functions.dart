@@ -20,14 +20,14 @@ class FirestoreServices {
     required String name,
     required String number,
     required String uid,
-    String? img,
     required context,
+    String? img,
   }) async {
     var ref = usercolRef.doc(uid);
     var user = MyUser(
       name: name,
       phoneNumber: number,
-      img: img!,
+      img: img ?? '',
     );
     await ref.set(user.toMap());
     var refNet = networkscolRef.doc(uid);
